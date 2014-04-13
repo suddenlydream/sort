@@ -7,12 +7,18 @@
 //
 
 #include <stdio.h>
+#include "sort.h"
 
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    printf("Hello, World!\n");
+    int array[100];
+    
+    for (int i = 0 ; i < 100; i++) {
+        array[i] = rand() % 10000;
+    }
+    
+    quick_sort(array, 100);
     return 0;
 }
 
