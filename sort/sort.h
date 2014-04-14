@@ -9,6 +9,7 @@
 #ifndef sort_sort_h
 #define sort_sort_h
 
-int quick_sort(int arrays[], int length);
+int quick_sort(int *arr, int len);
+int heap_sort(int *arr, int len);
 
 #endif
