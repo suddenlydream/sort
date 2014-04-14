@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 #include "sort.h"
-#include "tools.h"
+#include "utils.h"
 
 #define TAG "quick_sort"
 

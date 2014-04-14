@@ -7,7 +7,7 @@
 //
 
 #include <stdio.h>
-#include "tools.h"
+#include "utils.h"
 
 void exchange(int *a, int *b){
 	int tmp = *a;

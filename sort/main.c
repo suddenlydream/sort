@@ -7,20 +7,21 @@
 //
 
 #include <stdio.h>
-#include "tools.h"
+#include "utils.h"
 #include "sort.h"
 
 int main(int argc, const char * argv[])
 {
 
-    int array[100];
-    int i = 0; 
-    for ( ; i < 100; i++) {
-        array[i] = rand() % 10000;
+    int array[10];
+    for ( int i = 0; i < 10; i++) {
+        array[i] = rand() % 1000;
     }
     
-    quick_sort(array, 100);
-	printArray(array, 100);
+    printArray(array, 10);
+//    quick_sort(array, 10);
+    heap_sort(array, 10);
+	printArray(array, 10);
     return 0;
 }
 

@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 dreaner. All rights reserved.
 //
 
-#ifndef sort_tools_h
-#define sort_tools_h
+#ifndef sort_utils_h
+#define sort_utils_h
 
 void exchange(int *a, int *b);
 void printArray(int *a, int len);
