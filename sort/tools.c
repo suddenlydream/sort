@@ -7,3 +7,23 @@
 //
 
 #include <stdio.h>
+#include "tools.h"
+
+void exchange(int *a, int *b){
+	int tmp = *a;
+	*a = *b;
+	*b = tmp;
+}
+
+void printArray(int *p, int len){
+	int i = 0;
+	while(i < len){
+		if(i % 5 == 0){
+			printf("\n");
+		}
+		printf("%d ", *p);
+		p++;
+		i++;
+	}
+	printf("\n");
+}

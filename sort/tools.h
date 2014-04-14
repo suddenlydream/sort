@@ -9,6 +9,7 @@
 #ifndef sort_tools_h
 #define sort_tools_h
 
-
+void exchange(int *a, int *b);
+void printArray(int *a, int len);
 
 #endif
