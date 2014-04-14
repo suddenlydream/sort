@@ -39,7 +39,7 @@ void max_heap(int *arr, int i, int size){
 }
 
 void build_max_heap(int *arr, int size){
-    for (int i = (size) / 2; i >= 0;  i--) {
+    for (int i = (size + 1) / 2; i >= 0;  i--) {
         max_heap(arr, i, size);
     }
 }
@@ -50,7 +50,7 @@ int heap_sort(int *arr, int len){
     for(int i = size; i >= 1; i--){
         exchange(arr, arr + i);
         size--;
-        max_heap(arr, i, size);
+        max_heap(arr, 0, size);
     }
     return 0;
 }
