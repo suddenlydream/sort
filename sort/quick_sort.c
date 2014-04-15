@@ -12,7 +12,7 @@
 
 #define TAG "quick_sort"
 
-int partition(int *arr, int start, int end){
+static int partition(int *arr, int start, int end){
     int x = *(arr+end);
     int j = start;
     int i = j-1;
@@ -27,7 +27,7 @@ int partition(int *arr, int start, int end){
     return i+1;
 }
 
-void q_sort(int *arr, int start, int end){
+static void q_sort(int *arr, int start, int end){
     if (start >= end) {
         return;
     }

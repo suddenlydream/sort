@@ -9,20 +9,9 @@
 #include <stdio.h>
 #include "sort.h"
 #include "utils.h"
+#include "tree.h"
 
-int parent(int i){
-    return (i - 1) / 2;
-}
-
-int left(int i){
-    return 2 * i + 1;
-}
-
-int right(int i){
-    return 2 * i + 2;
-}
-
-void max_heap(int *arr, int i, int len){
+static void max_heap(int *arr, int i, int len){
     if(i >= len){
 		return;
 	}
@@ -43,11 +32,11 @@ void max_heap(int *arr, int i, int len){
     }
 }
 
-int heap_sort(int *arr, int len){
+int heap_sort_n(int *arr, int len){
     max_heap(arr, 0, len);
 	int i = len - 1;
 	while(i > 0){
-		printf("%d step arr: %d \n", i, *arr);
+//		printf("%d step arr: %d \n", i, *arr);
         exchange(arr, arr + i);
 		i--;
         max_heap(arr, 0, i);

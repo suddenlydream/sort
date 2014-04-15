@@ -9,20 +9,9 @@
 #include <stdio.h>
 #include "sort.h"
 #include "utils.h"
+#include "tree.h"
 
-int parent(int i){
-    return (i - 1) / 2;
-}
-
-int left(int i){
-    return 2 * i + 1;
-}
-
-int right(int i){
-    return 2 * i + 2;
-}
-
-void max_heap(int *arr, int i, int size){
+static void max_heap(int *arr, int i, int size){
     int l = left(i);
     int r = right(i);
     int largest = i;
