@@ -8,7 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AD10127018FAD74E00B4BACB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = AD10126F18FAD74E00B4BACB /* main.c */; };
-		AD10127218FAD74E00B4BACB /* sort.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = AD10127118FAD74E00B4BACB /* sort.1 */; };
+		AD49707E18FD908A0052424C /* heap_sort_n.c in Sources */ = {isa = PBXBuildFile; fileRef = AD49707618FD908A0052424C /* heap_sort_n.c */; };
+		AD49707F18FD908A0052424C /* heap_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = AD49707718FD908A0052424C /* heap_sort.c */; };
+		AD49708018FD908A0052424C /* quick_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = AD49707818FD908A0052424C /* quick_sort.c */; };
+		AD49708118FD908A0052424C /* sort.h in Sources */ = {isa = PBXBuildFile; fileRef = AD49707918FD908A0052424C /* sort.h */; };
+		AD49708218FD908A0052424C /* tree.c in Sources */ = {isa = PBXBuildFile; fileRef = AD49707A18FD908A0052424C /* tree.c */; };
+		AD49708318FD908A0052424C /* tree.h in Sources */ = {isa = PBXBuildFile; fileRef = AD49707B18FD908A0052424C /* tree.h */; };
+		AD49708418FD908A0052424C /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = AD49707C18FD908A0052424C /* utils.c */; };
+		AD49708518FD908A0052424C /* utils.h in Sources */ = {isa = PBXBuildFile; fileRef = AD49707D18FD908A0052424C /* utils.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +25,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				AD10127218FAD74E00B4BACB /* sort.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -27,7 +33,14 @@
 /* Begin PBXFileReference section */
 		AD10126C18FAD74E00B4BACB /* sort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sort; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD10126F18FAD74E00B4BACB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		AD10127118FAD74E00B4BACB /* sort.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = sort.1; sourceTree = "<group>"; };
+		AD49707618FD908A0052424C /* heap_sort_n.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = heap_sort_n.c; sourceTree = "<group>"; };
+		AD49707718FD908A0052424C /* heap_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = heap_sort.c; sourceTree = "<group>"; };
+		AD49707818FD908A0052424C /* quick_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quick_sort.c; sourceTree = "<group>"; };
+		AD49707918FD908A0052424C /* sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sort.h; sourceTree = "<group>"; };
+		AD49707A18FD908A0052424C /* tree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tree.c; sourceTree = "<group>"; };
+		AD49707B18FD908A0052424C /* tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tree.h; sourceTree = "<group>"; };
+		AD49707C18FD908A0052424C /* utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		AD49707D18FD908A0052424C /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +73,15 @@
 		AD10126E18FAD74E00B4BACB /* sort */ = {
 			isa = PBXGroup;
 			children = (
+				AD49707618FD908A0052424C /* heap_sort_n.c */,
+				AD49707718FD908A0052424C /* heap_sort.c */,
+				AD49707818FD908A0052424C /* quick_sort.c */,
+				AD49707918FD908A0052424C /* sort.h */,
+				AD49707A18FD908A0052424C /* tree.c */,
+				AD49707B18FD908A0052424C /* tree.h */,
+				AD49707C18FD908A0052424C /* utils.c */,
+				AD49707D18FD908A0052424C /* utils.h */,
 				AD10126F18FAD74E00B4BACB /* main.c */,
-				AD10127118FAD74E00B4BACB /* sort.1 */,
 			);
 			path = sort;
 			sourceTree = "<group>";
@@ -117,6 +137,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD49707E18FD908A0052424C /* heap_sort_n.c in Sources */,
+				AD49707F18FD908A0052424C /* heap_sort.c in Sources */,
+				AD49708018FD908A0052424C /* quick_sort.c in Sources */,
+				AD49708118FD908A0052424C /* sort.h in Sources */,
+				AD49708218FD908A0052424C /* tree.c in Sources */,
+				AD49708318FD908A0052424C /* tree.h in Sources */,
+				AD49708418FD908A0052424C /* utils.c in Sources */,
+				AD49708518FD908A0052424C /* utils.h in Sources */,
 				AD10127018FAD74E00B4BACB /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +255,7 @@
 				AD10127718FAD74E00B4BACB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
