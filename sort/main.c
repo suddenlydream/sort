@@ -14,11 +14,12 @@ int main(int argc, const char * argv[])
 {
 
     int array[10];
-    for ( int i = 0; i < 10; i++) {
-        array[i] = rand() % 1000;
+	int i = 0;
+    for ( ; i < 10; i++) {
+        array[i] = rand() % 100;
     }
     
-    printArray(array, 10);
+//    printArray(array, 100);
 //    quick_sort(array, 10);
     heap_sort(array, 10);
 	printArray(array, 10);

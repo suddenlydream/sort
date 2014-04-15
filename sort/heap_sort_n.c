@@ -22,37 +22,35 @@ int right(int i){
     return 2 * i + 2;
 }
 
-void max_heap(int *arr, int i, int size){
+void max_heap(int *arr, int i, int len){
+    if(i >= len){
+		return;
+	}
     int l = left(i);
     int r = right(i);
-    int largest = i;
-    if (l <= size && *(arr + l) > *(arr + i)) {
+    max_heap(arr, l, len);
+    max_heap(arr, r, len);	
+	int largest = i;
+    if (l < len && *(arr + l) > *(arr + i)) {
         largest = l;
     }
-    if (r <= size && *(arr + r) > *(arr + largest)) {
+    if (r < len && *(arr + r) > *(arr + largest)) {
         largest = r;
     }
+	//printf("max_heap largest:%d i:%d \n", largest, i);
     if (largest != i) {
         exchange(arr+largest, arr+i);
-        max_heap(arr, largest, size);
-    }
-}
-
-void build_max_heap(int *arr, int size){
-	int i = size / 2;
-    for (; i >= 0;  i--) {
-        max_heap(arr, i, size);
     }
 }
 
 int heap_sort(int *arr, int len){
-    int size = len - 1;
-    build_max_heap(arr, size);
-	int i = size;
-    for(; i >= 1; i--){
+    max_heap(arr, 0, len);
+	int i = len - 1;
+	while(i > 0){
+		printf("%d step arr: %d \n", i, *arr);
         exchange(arr, arr + i);
-        size--;
-        max_heap(arr, 0, size);
-    }
+		i--;
+        max_heap(arr, 0, i);
+	}
     return 0;
 }
